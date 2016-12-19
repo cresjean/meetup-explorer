@@ -1,0 +1,80 @@
+{
+    "venue": {
+        "venue_name": "Twin Falls @ Barton Creek Greenbelt",
+        "lon": -97.804169,
+        "lat": 30.24753,
+        "venue_id": 20496562
+    },
+    "visibility": "public",
+    "response": "no",
+    "guests": 0,
+    "member": {
+        "member_id": 186928894,
+        "photo": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/c\/0\/0\/thumb_256771744.jpeg",
+        "member_name": "Holly"
+    },
+    "rsvp_id": 1643765834,
+    "mtime": 1481836700458,
+    "event": {
+        "event_name": "Long Round Trip Hike to 24 Diner",
+        "event_id": "vbftgmyvqbvb",
+        "time": 1481898600000,
+        "event_url": "https:\/\/www.meetup.com\/Austin-Sierra-Club-Outings\/events\/235901012\/"
+    },
+    "group": {
+        "group_topics": [{
+            "urlkey": "camping",
+            "topic_name": "Camping"
+        }, {
+            "urlkey": "hiking",
+            "topic_name": "Hiking"
+        }, {
+            "urlkey": "kayaking",
+            "topic_name": "Kayaking"
+        }, {
+            "urlkey": "bike",
+            "topic_name": "Bicycling"
+        }, {
+            "urlkey": "backpacking",
+            "topic_name": "Backpacking"
+        }, {
+            "urlkey": "outdoors",
+            "topic_name": "Outdoors"
+        }, {
+            "urlkey": "environment",
+            "topic_name": "Environment"
+        }, {
+            "urlkey": "paddling",
+            "topic_name": "Paddling"
+        }, {
+            "urlkey": "nature-photography",
+            "topic_name": "Nature Photography"
+        }, {
+            "urlkey": "travel",
+            "topic_name": "Travel"
+        }, {
+            "urlkey": "outdoor-adventures",
+            "topic_name": "Outdoor Adventures"
+        }, {
+            "urlkey": "rowing",
+            "topic_name": "Rowing"
+        }, {
+            "urlkey": "mountain-biking",
+            "topic_name": "Mountain Biking"
+        }, {
+            "urlkey": "outdoor-fitness",
+            "topic_name": "Outdoor  Fitness"
+        }, {
+            "urlkey": "trails",
+            "topic_name": "Trails"
+        }],
+        "group_city": "Austin",
+        "group_country": "us",
+        "group_id": 1589422,
+        "group_name": "Austin Sierra Club Outings",
+        "group_lon": -97.74,
+        "group_urlname": "Austin-Sierra-Club-Outings",
+        "group_state": "TX",
+        "group_lat": 30.27
+    }
+}

@@ -19,7 +19,7 @@ filebeat.prospectors:
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
-    - /var/log/rsvps.log
+    - /var/log/rsvps/*
     #- c:\programdata\elasticsearch\logs\*
 
   # Exclude lines. A list of regular expressions to match. It drops the lines that are
@@ -81,7 +81,10 @@ filebeat.prospectors:
 output.elasticsearch:
   # Array of hosts to connect to.
   hosts: ["elasticsearch:9200"]
-
+  template.enabled: true
+  template.name: meetup-rsvp
+  template.overwrite: true
+  template.path: index_template.json
   # Optional protocol and basic auth credentials.
   #protocol: "https"
   #username: "elastic"

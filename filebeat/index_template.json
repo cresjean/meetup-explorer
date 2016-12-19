@@ -1,20 +1,56 @@
 {
-  "template": "te*",
+  "template": "rsvps*",
   "settings": {
     "number_of_shards": 1
   },
   "mappings": {
-    "type1": {
+    "rsvp": {
       "_source": {
         "enabled": false
       },
       "properties": {
-        "host_name": {
-          "type": "keyword"
+        "venue": {
+          "properties": {
+            "venue_name": {
+              "type": "string"
+            },
+            "location": {
+                "type": "geo_point"
+            },
+
+            "venue_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
         },
-        "created_at": {
+        "mtime": {
           "type": "date",
-          "format": "EEE MMM dd HH:mm:ss Z YYYY"
+          "index": "not_analyzed"
+        },
+        "event": {
+          "properties": {
+            "event_name": {
+              "type": "string"
+            },
+            "time": {
+              "type": "date"
+            }
+          }
+        },
+        "group": {
+          "properties": {
+            "group_topics": {
+              "properties": {
+                "urlkey": {
+                  "type": "string"
+                },
+                "topic_name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
         }
       }
     }

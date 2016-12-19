@@ -12,3 +12,6 @@ curl -XPUT http://elasticsearch:9200/shakespeare -d '
  }
 }
 ';
+
+
+curl 'elasticsearch:9200/_cat/indices?v'

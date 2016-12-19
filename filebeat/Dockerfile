@@ -3,6 +3,7 @@ WORKDIR /opt/filebeat
 
 # Prepare folder
 RUN mkdir -p /opt/filebeat
+RUN mkdir -p /var/log/rsvps
 RUN touch /var/log/rsvps.log
 
 # Prepare installation
