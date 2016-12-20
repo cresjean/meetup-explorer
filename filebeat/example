@@ -15,3 +15,4 @@ curl -XPUT http://elasticsearch:9200/shakespeare -d '
 
 
 curl 'elasticsearch:9200/_cat/indices?v'
+curl -XPUT 'http://elasticsearch:9200/_template/filebeat' -d@/etc/filebeat/index_template.json
