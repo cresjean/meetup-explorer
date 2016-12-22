@@ -13,6 +13,12 @@ curl -XPUT http://elasticsearch:9200/shakespeare -d '
 }
 ';
 
-
+/usr/bin/filebeat.sh -configtest -e
 curl 'elasticsearch:9200/_cat/indices?v'
-curl -XPUT 'http://elasticsearch:9200/_template/filebeat' -d@/etc/filebeat/index_template.json
+curl -XPUT 'http://elasticsearch:9200/_template/rsvp' -d@/etc/filebeat/index_template.json
+/etc/init.d/filebeat start
+
+curl -XGET 'http://elasticsearch:9200/filebeat-2016.12.22/'
+
+curl -XHEAD -i 'http://elasticsearch:9200/filebeat-2016.12.22/tweet'
+curl -XDELETE 'http://elasticsearch:9200/filebeat-*'

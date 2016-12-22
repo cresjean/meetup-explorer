@@ -6,6 +6,7 @@ services:
       - ./filebeat/rsvps.sample.json:/var/log/rsvps.log
       - ./filebeat/run.sh:/opt/filebeat/run.sh
       - ./filebeat/index_template.json:/etc/filebeat/index_template.json
+      - ./filebeat/filebeat.yml:/etc/filebeat/filebeat.yml
 
     command: "/opt/filebeat/run.sh"
     links:

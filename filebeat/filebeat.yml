@@ -82,9 +82,9 @@ output.elasticsearch:
   # Array of hosts to connect to.
   hosts: ["elasticsearch:9200"]
   template.enabled: true
-  template.name: meetup-rsvp
+  template.name: "rsvps"
   template.overwrite: true
-  template.path: index_template.json
+  template.path: "index_template.json"
   # Optional protocol and basic auth credentials.
   #protocol: "https"
   #username: "elastic"
