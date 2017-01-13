@@ -19,5 +19,5 @@ RUN apt-get update \
 
 
 # configure the beat to start automatically during boot
-RUN service filebeat restart
+RUN service filebeat start
 RUN update-rc.d filebeat defaults 95 10

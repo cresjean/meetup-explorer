@@ -85,6 +85,9 @@ output.elasticsearch:
   template.name: "rsvps"
   template.overwrite: true
   template.path: "index_template.json"
+  index: "rsvps-%{+yyyy.MM.dd}"
+  document_type: "rsvp"
+  manage_template: false
   # Optional protocol and basic auth credentials.
   #protocol: "https"
   #username: "elastic"

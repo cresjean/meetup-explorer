@@ -19,6 +19,7 @@ curl -XPUT 'http://elasticsearch:9200/_template/rsvp' -d@/etc/filebeat/index_tem
 /etc/init.d/filebeat start
 
 curl -XGET 'http://elasticsearch:9200/filebeat-2016.12.22/'
+curl -XGET 'http://elasticsearch:9200/rsvps-2016.12.22/_search?pretty'
 
 curl -XHEAD -i 'http://elasticsearch:9200/filebeat-2016.12.22/tweet'
 curl -XDELETE 'http://elasticsearch:9200/filebeat-*'
