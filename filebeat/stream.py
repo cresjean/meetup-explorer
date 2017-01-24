@@ -24,7 +24,6 @@ with open(logfile, 'w+') as file:
                 topic_string = u''.join(topic['topic_name']).encode('utf-8').strip()
                 topics_string = "{},{}".format(topic_string,topics_string)
                 topics_array.append(topic_string)
-            print topics_string
             parsed['group']['topics_string'] = topics_string
             parsed['group']['topics_array'] = topics_array
 

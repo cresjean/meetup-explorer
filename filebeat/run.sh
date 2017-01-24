@@ -1,3 +1,2 @@
 #!/bin/bash
-
-python /opt/filebeat/stream.py /var/log/rsvps/rsvps-`date +'%Y%m%d'`.log
+/etc/init.d/filebeat start && python /opt/filebeat/stream.py /var/log/rsvps/rsvps-`date +'%Y%m%d'`.log
