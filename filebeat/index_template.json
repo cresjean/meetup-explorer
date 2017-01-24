@@ -6,23 +6,15 @@
   "mappings": {
     "rsvp": {
       "_source": {
-        "enabled": false
+        "enabled": true
       },
       "properties": {
         "venue": {
-          "properties": {
+          "properties":{
             "venue_name": {
               "type": "string"
-            },
-            "location": {
-                "type": "geo_point"
-            },
-
-            "venue_id": {
-              "type": "string",
-              "index": "not_analyzed"
             }
-          }
+            }
         },
         "mtime": {
           "type": "date",
@@ -40,6 +32,12 @@
         },
         "group": {
           "properties": {
+            "location": {
+                  "type": "geo_point"
+            },
+            "topic_string": {
+              "type": "string"
+            },
             "group_topics": {
               "properties": {
                 "urlkey": {

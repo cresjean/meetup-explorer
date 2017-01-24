@@ -11,12 +11,15 @@
 
 filebeat.prospectors:
 
+
+
 # Each - is a prospector. Most options can be set at the prospector level, so
 # you can use different prospectors for various configurations.
 # Below are the prospector specific configurations.
-
 - input_type: log
-
+  json.keys_under_root: true
+  document_type: rsvp
+  tags: ["json"]
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
     - /var/log/rsvps/*
@@ -76,7 +79,8 @@ filebeat.prospectors:
 
 # Configure what outputs to use when sending the data collected by the beat.
 # Multiple outputs may be used.
-
+output.stdout:
+  codec: json
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
@@ -86,7 +90,6 @@ output.elasticsearch:
   template.overwrite: true
   template.path: "index_template.json"
   index: "rsvps-%{+yyyy.MM.dd}"
-  document_type: "rsvp"
   manage_template: false
   # Optional protocol and basic auth credentials.
   #protocol: "https"
